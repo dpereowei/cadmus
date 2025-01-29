@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cadmus
-        image: realartisan/cadmus:8cf4253_main_20250129T193939 # {"$imagepolicy": "flux-system:cadmus"}
+        image: realartisan/cadmus:a7b535b_main_20250129T195251 # {"$imagepolicy": "flux-system:cadmus"}
         ports:
         - containerPort: 8080
         resources:
