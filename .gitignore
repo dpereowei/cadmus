@@ -1,2 +1,4 @@
 .env
 .terraform
+monoroot_credentials.csv
+monoroot_accessKeys.csv
