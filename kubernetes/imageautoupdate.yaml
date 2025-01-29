@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   image: realartisan/cadmus
-  interval: 1m
+  interval: 5m
   secretRef:
     name: dockerhub-secret
 
