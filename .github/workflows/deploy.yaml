@@ -3,7 +3,10 @@ name: Build and Push to Docker Hub
 on:
   push:
     branches:
-      - develop
+      - main
+    paths:
+      - 'webapp/**'  # Only trigger builds if files in 'webapp' change
+      - '!kubernetes/deployment.yaml'  # Ignore changes to this file
 
 env:
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
