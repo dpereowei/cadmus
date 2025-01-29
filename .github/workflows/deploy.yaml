@@ -27,7 +27,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build and push Docker image
-        run: ./github/scripts/build.sh                    
+        run: ./.github/scripts/build.sh                    
 
       - name: Log out from GitHub Container Registry
         run: docker logout ghcr.io
