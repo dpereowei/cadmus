@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cadmus
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cadmus
+  template:
+    metadata:
+      labels:
+        app: cadmus
+    spec:
+      containers:
+      - name: cadmus
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
